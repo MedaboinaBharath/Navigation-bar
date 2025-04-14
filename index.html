@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navigationbar</title>
-  <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+           margin: 0;
+           font-family: Arial, sans-serif;
 }
 
-.navigation bar {
-  background-color: #350202;
-  padding: 15px 0;
+            .navbar {
+            background-color: #f80606;
+             padding: 10px 0;
 }
 
-.navigation-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
+        .navbar a {
+            color: grey;
+            text-decoration: none;
+            padding: 20px 15px;
+            transition: background-color 0.3s;
+        }
 
-.navigation-links li {
-  margin: 0 30px;
-}
-
-.navigation-links a {
-  text-decoration: none;
-  color: rgb(14, 13, 13);
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.navigation-links a:hover {
-  color: #f0b9b9;
-}
+        .navbar a:hover {
+            background-color: #f0b9b9;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-  <nav class="navigationbar">
-    <ul class="navigation-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Courses</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">sign in/sign up</a></li>
-    </ul>
-  </nav>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">courses</a>
+        <a href="#services">About</a>
+        <a href="#contact">Contact us</a>
+    </div>
 </body>
 </html>
+
